@@ -21,8 +21,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/movie-search-app.git
-   cd movie-search-app
+   git clone https://github.com/Israwss/cinema_front.git
+   cd cinema_front
    ```
 
 2. Install dependencies:
