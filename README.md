@@ -1,8 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a **[Next.js](https://nextjs.org)** project integrated with the **TMDb API** for searching movies and displaying results. It uses **Material-UI** for styling and UI components, creating a sleek and responsive interface.
+
+---
+
+## Features
+
+- **Optimized Fonts**: Utilizes [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) for efficient font loading.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js**: v16.8 or higher.
+- **Package Manager**: npm, yarn, pnpm, or bun.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/movie-search-app.git
+   cd movie-search-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Configure the TMDb API:
+   - Add your TMDb API key to the `.env.local` file:
+     ```env
+     NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key
+     ```
+   - Replace `your_tmdb_api_key` with your API key from [TMDb](https://www.themoviedb.org/documentation/api).
+
+### Running the Development Server
+
+Start the development server with your preferred package manager:
 
 ```bash
 npm run dev
@@ -14,23 +53,42 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Editing Pages
 
-## Learn More
+You can start editing the application by modifying the `app/page.js` file. The app will automatically update as you save changes.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Material-UI Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses **Material-UI** for building React components. To learn more about Material-UI, check out:
+
+- [Material-UI Documentation](https://mui.com) - Learn how to build powerful UIs.
+- [Material-UI GitHub](https://github.com/mui/material-ui) - Feedback and contributions are welcome!
+
+---
+
+## Learn More About Next.js
+
+For further exploration of Next.js, refer to:
+
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about features and API.
+- [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
+
+---
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is with [Vercel](https://vercel.com). Follow the deployment guide:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying)
+
+---
+
+## License
+
+This project is open-source and available under the MIT License. See the `LICENSE` file for details.
