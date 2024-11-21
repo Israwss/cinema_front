@@ -1,4 +1,4 @@
-This is a **[Next.js](https://nextjs.org)** project integrated with the **TMDb API** for searching movies and displaying results. It uses **Material-UI** for styling and UI components, creating a sleek and responsive interface.
+This is a **[Next.js](https://nextjs.org)** project integrated with the **TMDb API**. It uses **Material-UI** for styling and UI components, creating a sleek and responsive interface.
 
 ---
 
