@@ -123,7 +123,7 @@ export default function SearchBar() {
   
 
   return (
-    <Container>
+    <Container sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       <Box display="flex" flexDirection="column" alignItems="center" minHeight="100vh">
         <Autocomplete
           freeSolo
@@ -349,14 +349,7 @@ export default function SearchBar() {
             >
               Rate movie
             </Button>
-            <Button
-            variant="contained"
-              color="primary"
-              onClick={() => handleNavigate("recommend")}
             
-            >
-              Get recommendations
-            </Button>
 
             {/* Botón de cierre */}
             <Button variant="contained" color="error" onClick={closeDialog}>

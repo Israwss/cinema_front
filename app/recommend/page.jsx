@@ -31,7 +31,7 @@ export default function RecommendPage() {
         const response = await fetch(`http://localhost:5000/get_recommendations?id=${movieId}`);
         if (response.ok) {
           const data = await response.json();
-          setRecommendations(data.similar_movies || []);
+          setRecommendations(Array.isArray(data.similar_movies) ? data.similar_movies : []);
         } else {
           console.error("Failed to fetch recommendations");
         }
@@ -61,10 +61,9 @@ export default function RecommendPage() {
     setPage(value);
   };
 
-  const paginatedMovies = recommendations.slice(
-    (page - 1) * itemsPerPage,
-    page * itemsPerPage
-  );
+  const paginatedMovies = Array.isArray(recommendations)
+    ? recommendations.slice((page - 1) * itemsPerPage, page * itemsPerPage)
+    : [];
 
   if (loading) {
     return (

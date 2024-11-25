@@ -40,8 +40,16 @@ export default function RatePage() {
 
         alert(data.message);
 
-        // Redirigir a la página de recomendaciones con el ID de la película
-        router.push(`/recommend?id=${id}`);
+        // Verifica el sentimiento del análisis
+        if (data.sentiment === "positive") {
+          // Redirigir a la página de recomendaciones con el ID de la película
+          router.push(`/recommend?id=${id}`);
+        } else if (data.sentiment === "negative") {
+          // Redirigir a la página principal
+          router.push(`/`);
+        } else {
+          alert("Unable to determine sentiment. Please try again.");
+        }
       } else {
         const error = await response.json();
         alert(error.error || "Something went wrong");
