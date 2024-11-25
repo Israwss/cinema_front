@@ -5,7 +5,6 @@ import Image from "next/image";
 const navitems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 export default function AppbarGlobal() {
   return (

@@ -3,22 +3,18 @@
 import { Box, Container, Grid2, Typography, useTheme } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
-import SettingsIcon from "@mui/icons-material/Settings";
-import LightbulbIcon from "@mui/icons-material/Lightbulb";
-import PublicIcon from "@mui/icons-material/Public";
-import HandshakeIcon from "@mui/icons-material/Handshake";
+import MovieIcon from "@mui/icons-material/Movie";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import GroupIcon from "@mui/icons-material/Group";
-import BusinessIcon from "@mui/icons-material/Business";
+import StarIcon from "@mui/icons-material/Star";
+import PublicIcon from "@mui/icons-material/Public";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 
 export default function About() {
   const theme = useTheme();
   return (
-    <Container  maxWidth="xl">
-      <Grid
-        container
-        spacing={4}
-        alignItems="center"
-      >
+    <Container maxWidth="xl">
+      <Grid container spacing={4} alignItems="center">
         <Grid
           size={{ xs: 12, md: 6 }}
           sx={{
@@ -28,37 +24,31 @@ export default function About() {
           <Typography variant="h3" gutterBottom sx={{ fontWeight: "bold" }}>
             Our Story
           </Typography>
-          <Box sx={{ borderBottom: "4px solid red", width: "50px" }} />
+          <Box sx={{ borderBottom: "4px solid #ff5722", width: "50px" }} />
           <Typography
-            variant="'body1"
-            sx={{ color: theme.palette.text.light, fontSize: "1.1rem" }}
+            variant="body1"
+            sx={{ color: theme.palette.text.secondary, fontSize: "1.1rem" }}
             paragraph
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            eos aliquid sed beatae saepe, s it vitae natus sequi necessitatibus
-            similique, aut reiciendis id modi! Vel dolor ipsum tempore? Officia,
-            quam!
+            Welcome to Cinema Paradiso, your ultimate destination for personalized movie recommendations. Our journey started with a mission to help movie enthusiasts find their next favorite film, no matter their taste or preferences.
           </Typography>
           <Typography
-            variant="'body1"
-            sx={{ color: theme.palette.text.light, fontSize: "1.1rem" }}
+            variant="body1"
+            sx={{ color: theme.palette.text.secondary, fontSize: "1.1rem" }}
             paragraph
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            eos aliquid sed beatae saepe, s it vitae natus sequi necessitatibus
-            similique, aut reiciendis id modi! Vel dolor ipsum tempore? Officia,
-            quam!
+            With cutting-edge AI algorithms, a global database of films, and a passionate team of cinephiles, Cinema Paradiso connects viewers with stories that inspire, entertain, and captivate. Join us as we redefine how you discover movies.
           </Typography>
         </Grid>
         <Grid
           size={{ xs: 12, md: 6 }}
           display="flex"
-          alignItems="center" //vertical
-          justifyContent="center" //horizontal
+          alignItems="center" // vertical
+          justifyContent="center" // horizontal
         >
           <Image
-            src="/500x300.svg"
-            alt="Our Story Image"
+            src="/wp7990157.jpg"
+            alt="Cinema Paradiso Image"
             width={500}
             height={300}
             priority
@@ -70,7 +60,7 @@ export default function About() {
         sx={{
           mt: 6,
           mb: 8,
-          background: "linear-gradient(to right, #e3f2fd, #bbdefb)",
+          background: "linear-gradient(to right, #ffff, #b5b5b5)",
           py: 8,
           width: "100%",
         }}
@@ -81,138 +71,102 @@ export default function About() {
           gutterBottom
           sx={{ fontWeight: "bold" }}
         >
-          Our Global Reach
+          Our Impact
         </Typography>
         <Typography
           variant="body1"
           align="center"
-          sx={{ color: theme.palette.text.light, fontSize: "1.1rem" }}
+          sx={{ color: theme.palette.text.secondary, fontSize: "1.1rem" }}
           paragraph
         >
-          Our company is keader un the industry, providing top-notch services
-          and products to client around the world.
+          At Cinema Paradiso, we bring together technology and passion to create unforgettable movie experiences. Here's what makes us unique:
         </Typography>
         <Box
           sx={{
-            borderBottom: "4px solid red",
-            width: "50px",
+            borderBottom: "4px solid #ff5722",
             width: "50px",
             mb: 4,
             mx: "auto",
           }}
         />
 
-        <Grid
-          container
-          spacing={4}
-          justifyContent="center"
-        >
-          <Grid
-            size={{ xs: 12, sm: 4, md: 2 }}
-            sx={{ textAlign: "center" }}
-          >
-            <SettingsIcon
-              sx={{ fontSize: 40, color: theme.palette.text.light, mb: 1 }}
-            />
-            <Typography variant="h4" aling="center">
-              25k
+        <Grid container spacing={4} justifyContent="center">
+          <Grid size={{ xs: 12, sm: 4, md: 2 }} sx={{ textAlign: "center" }}>
+            <MovieIcon sx={{ fontSize: 40, color: theme.palette.text.secondary, mb: 1 }} />
+            <Typography variant="h4" align="center">
+              100k+
             </Typography>
             <Typography
-              variant="subtitile1"
+              variant="subtitle1"
               align="center"
-              sx={{ color: theme.palette.text.light }}
+              sx={{ color: theme.palette.text.secondary }}
             >
-              Reliable Services
+              Movies Recommended
             </Typography>
           </Grid>
-          <Grid
-            size={{ xs: 12, sm: 4, md: 2 }}
-            sx={{ textAlign: "center" }}
-          >
-            <LightbulbIcon
-              sx={{ fontSize: 40, color: theme.palette.text.light, mb: 1 }}
-            />
-            <Typography variant="h4" aling="center">
-              50+
-            </Typography>
-            <Typography
-              variant="subtitile1"
-              align="center"
-              sx={{ color: theme.palette.text.light }}
-            >
-              Advanced Technology
-            </Typography>
-          </Grid>
-          <Grid
-            size={{ xs: 12, sm: 4, md: 2 }}
-            sx={{ textAlign: "center" }}
-          >
-            <PublicIcon
-              sx={{ fontSize: 40, color: theme.palette.text.light, mb: 1 }}
-            />
-            <Typography variant="h4" aling="center">
-              40M
-            </Typography>
-            <Typography
-              variant="subtitile1"
-              align="center"
-              sx={{ color: theme.palette.text.light }}
-            >
-              Innovative Solutions
-            </Typography>
-          </Grid>
-          <Grid
-            size={{ xs: 12, sm: 4, md: 2 }}
-            sx={{ textAlign: "center"}}
-          >
-            <HandshakeIcon
-              sx={{ fontSize: 40, color: theme.palette.text.light, mb: 1 }}
-            />
-            <Typography variant="h4" aling="center">
+          <Grid size={{ xs: 12, sm: 4, md: 2 }} sx={{ textAlign: "center" }}>
+            <ThumbUpIcon sx={{ fontSize: 40, color: theme.palette.text.secondary, mb: 1 }} />
+            <Typography variant="h4" align="center">
               95%
             </Typography>
             <Typography
-              variant="subtitile1"
+              variant="subtitle1"
               align="center"
-              sx={{ color: theme.palette.text.light }}
+              sx={{ color: theme.palette.text.secondary }}
             >
-              Trusted by industry leaders
+              Positive Feedback
             </Typography>
           </Grid>
-          <Grid
-            size={{ xs: 12, sm: 4, md: 2 }}
-            sx={{ textAlign: "center"}}
-          >
-            <GroupIcon
-              sx={{ fontSize: 40, color: theme.palette.text.light, mb: 1 }}
-            />
-            <Typography variant="h4" aling="center">
-              100%
+          <Grid size={{ xs: 12, sm: 4, md: 2 }} sx={{ textAlign: "center" }}>
+            <GroupIcon sx={{ fontSize: 40, color: theme.palette.text.secondary, mb: 1 }} />
+            <Typography variant="h4" align="center">
+              50k
             </Typography>
             <Typography
-              variant="subtitile1"
+              variant="subtitle1"
               align="center"
-              sx={{ color: theme.palette.text.light }}
+              sx={{ color: theme.palette.text.secondary }}
             >
-              Customer focus
+              Happy Users
             </Typography>
           </Grid>
-          <Grid
-            size={{ xs: 12, sm: 4, md: 2 }}
-            sx={{ textAlign: "center"}}
-          >
-            <BusinessIcon
-              sx={{ fontSize: 40, color: theme.palette.text.light, mb: 1 }}
-            />
-            <Typography variant="h4" aling="center">
-              150
+          <Grid size={{ xs: 12, sm: 4, md: 2 }} sx={{ textAlign: "center" }}>
+            <StarIcon sx={{ fontSize: 40, color: theme.palette.text.secondary, mb: 1 }} />
+            <Typography variant="h4" align="center">
+              4.9/5
             </Typography>
             <Typography
-              variant="subtitile1"
+              variant="subtitle1"
               align="center"
-              sx={{ color: theme.palette.text.light }}
+              sx={{ color: theme.palette.text.secondary }}
             >
-              Global presence
+              Average Rating
+            </Typography>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 4, md: 2 }} sx={{ textAlign: "center" }}>
+            <PublicIcon sx={{ fontSize: 40, color: theme.palette.text.secondary, mb: 1 }} />
+            <Typography variant="h4" align="center">
+              150+
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              sx={{ color: theme.palette.text.secondary }}
+            >
+              Countries Reached
+            </Typography>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 4, md: 2 }} sx={{ textAlign: "center" }}>
+            <TrendingUpIcon sx={{ fontSize: 40, color: theme.palette.text.secondary, mb: 1 }} />
+            <Typography variant="h4" align="center">
+              Top Rated
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              sx={{ color: theme.palette.text.secondary }}
+            >
+              Recommendation System
             </Typography>
           </Grid>
         </Grid>
